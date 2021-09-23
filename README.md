@@ -12,7 +12,7 @@ The method of mirrored assessment confronts social and ecological indicators of 
 
 The assessment framework and its application are described in depth in [Chapters 5 and 6](https://journals.open.tudelft.nl/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fjournals.open.tudelft.nl%2Fabe%2Farticle%2Fdownload%2F3275%2F3447%2F8841#9789463661096-TXT.indd%3A.322290%3A59394) of Forgaci (2018), respectively. [Appendix E](https://journals.open.tudelft.nl/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fjournals.open.tudelft.nl%2Fabe%2Farticle%2Fdownload%2F3275%2F3447%2F8841#9789463661096-TXT.indd%3A.322609%3A59470), gives a detailed description of the workflows and software used in the application of each indicator.
 
-![Delineation of URC Dâmbovița](fig/delineation.png)
+![Delineation of URC Dâmbovița](fig/delineation.png "Delineation of URC Dâmbovița")
 
 The data resulting from the assessment of URC Dâmbovița, Bucharest, can be found at <https://doi.org/10.4121/15126795.v1>.
 
