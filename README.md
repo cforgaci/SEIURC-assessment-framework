@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-This repository contains the GIS application of the framework for the spatial assessment of social-ecological integration developed in "Integrated Urban River Corridors: Spatial Design for Social-Ecological Resilience in Bucharest and Beyond" (Forgaci, 2018).
+This repository contains the GIS application of the framework for the spatial assessment of social-ecological integration developed in "Integrated Urban River Corridors: Spatial Design for Social-Ecological Resilience in Bucharest and Beyond" ([Forgaci, 2018](https://doi.org/10.7480/abe.2018.31)).
 
 The assessment framework consists of (1) a system of indicators and (2) a method of assessing social-ecological integration in URCs. Informed by an overview of current approaches to urban river assessment in urban planning and design, landscape architecture and landscape ecology, and structured by the four properties of URCs identified in Forgaci (2018), the assessment framework comprises a system of social and ecological indicators of connectivity (with the sub-categories of lateral, longitudinal and vertical connectivity) and spatial capacity (with the sub-categories of diversity, quality, and composition).
 
@@ -10,10 +10,9 @@ The assessment framework consists of (1) a system of indicators and (2) a method
 
 The method of mirrored assessment confronts social and ecological indicators of corresponding sub-categories (e.g. ecological spatial diversity and social spatial diversity) on corridor segment scale and on the scale of the URC. As a planning or design decision tool, this method of assessment highlights key areas of intervention where a minimum desirable goal of social-ecological integration can be achieved.
 
-The assessment framework is described in depth and applied on the case of the River Dâmbovița, Bucharest, in Chapters 5 and 6 of Forgaci (2018), respectively.
+The assessment framework is described in depth in Chapters 5 and 6 of Forgaci (2018), respectively. Appendix E, gives a detailed description of the workflows and software used in the application of each indicator.
 
-The data resulting from the assessment can be found at https://doi.org/10.4121/15126795.v1.
-
+The data resulting from the assessment of URC Dâmbovița, Bucharest, can be found at https://doi.org/10.4121/15126795.v1.
 
 
 
