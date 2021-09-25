@@ -2,23 +2,25 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
+## Introduction
+
 This repository contains the GIS application files used in the social-ecological integration assessment of the river Dâmbovița, Bucharest, as part of the PhD research "Integrated Urban River Corridors: Spatial Design for Social-Ecological Resilience in Bucharest and Beyond" ([Forgaci, 2018](https://doi.org/10.7480/abe.2018.31)), conducted at TU Delft under the supervision of Prof. Arjan van Timmeren, Prof. Machiel van Dorst, and [Dr. Jorge Gil](https://github.com/jorgegil), and with the assistance of Dr. Daniele Cannatella.
 
 The assessment framework consists of [an indicator system](#Indicator-system) and a [method of social-ecological integration assessment](#Method-of-social-ecological-integration-assessment) applied as a geospatial analysis on [Corridor Segments (CS) as analytical units of an Urban River Corridor (URC)](#Spatial-delineation) in question.
 
-### Indicator system
+## Indicator system
 
 Informed by an overview of current approaches to urban river assessment in urban planning and design, landscape architecture and landscape ecology, and structured by the four properties of URCs identified in Forgaci ([2018](https://doi.org/10.7480/abe.2018.31))—namely, Connectivity, Spatial capacity, Integration, and Multiscalarity—, the assessment framework comprises a system of social and ecological indicators of connectivity (with the sub-categories of lateral, longitudinal, and vertical connectivity) and spatial capacity (with the sub-categories of diversity, quality, and composition).
 
 ![Social-Ecological Integration Assessment Framework](fig/framework.png "Social-Ecological Integration Assessment Framework")
 
-### Method of social-ecological integration assessment
+## Method of social-ecological integration assessment
 
 The method makes use of a mirrored assessment chart which confronts the results from the analysis of social and ecological indicators of corresponding sub-categories. For instance, ecological spatial diversity measured in the level of biodiversity of local habitats is confronted with social spatial diversity measured through the multifunctionality of local public spaces. The assessment is carried out on corridor segment (CS) scale and summarised on the scale of the entire URC. As a planning or design decision tool, this method of assessment highlights key areas of intervention where a minimum desirable goal of social-ecological integration can be achieved. The following figure shows how scores recorded for a CS on the mirrored assessment chart can lead to decisions on where strategic interventions (marked with '+') can increase social-ecological integration.
 
 ![](fig/assessment.png)
 
-### Spatial delineation
+## Spatial delineation
 
 As depicted in the figure below, the delineation of an URC, that is, its **outer boundary**, its **corridor segments** and **the river space**, is carried out as follows:
 
@@ -32,7 +34,7 @@ As depicted in the figure below, the delineation of an URC, that is, its **outer
 
 To account for local characteristics, this method of delineation requires a qualitative judgement of the morphological particularities of the site in question. This is especially the case for corridor segment delineation, where variations in distance between major crossings may lead to an unbalanced subdivision of the corridor. If two consecutive major crossing are too close to each other (the case of narrow rivers with many crossings), adjacent segments with similar morphological characteristics can be merged. If consecutive crossings are too far from each other (the case of wide rivers), then the URC can be further subdivided based on changes in morphological characteristics of the oversized corridor segment.
 
-### Application on URC Dâmbovița, Bucharest
+## Application on URC Dâmbovița, Bucharest
 
 The assessment was carried out on a selection of indicators on URC Dâmbovița, Bucharest. An example of the results for one indicator is illustrated below. [`URC-D-analyses`](URC-D-analyses/) contains `.mxd` files with the analyses carried out in ESRI ArcMap v10.\#. [`URC-D-data`](URC-D-data/) contains the geospatial data used for the analyses. For each indicator selected for assessment, the analytical workflows were saved with ArcMap's ModelBuilder.
 
