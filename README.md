@@ -8,17 +8,17 @@ The assessment framework consists of [an indicator system](#Indicator-system) an
 
 ### URC and CS delineation
 
-The delineation of the URC, that is, its **outer boundary**, the **corridor segments** and **the river space**, is defined as follows:
+<img src="fig/delineation.jpg" width="600"/>
+
+As depicted in the figure below, the delineation of an URC, that is, its **outer boundary**, its **corridor segments** and **the river space**, is carried out as follows:
 
 1.  The edges of the valley are determined, for instance, from a digital elevation model.
-2.  The main roads parallel, next to, and outside the river valley are identified as the **outer boundaries** of the URC. The ends of the corridor are determined by municipal or metropolitan administrative boundaries. The ends are determined in such a way that connectivity with the surrounding (non-urbanized) landscape is ensured.
-3.  The outer boundary is extended with a walk shed (i.e. the area accessible within a walking distance of e.g. 500 m from a given location) calculated from both edges of the river.
-4.  After the outer boundary of the URC is delineated, **corridor segments** (CSs) are determined by dividing the URC along major transversal traffic lines. This way, spatially continuous units (i.e. uninterrupted by traffic barriers) are identified along the URC. In this step, the assumption is made that urban areas between two major crossings have distinct morphological characteristics.
-5.  The **river space** is defined as "the direct contact area between the river and the first line of buildings, including these buildings"
+2.  The main roads that are parallel, adjacent to, and outside the river valley are identified as the **outer boundary** of the URC. The ends of the corridor are determined by municipal or metropolitan administrative boundaries in such a way that continuity with the surrounding (non-urbanized) landscape is ensured.
+3.  The outer boundary is adjusted with a walk shed (i.e. the area accessible within a walking distance) of 500m calculated from both edges of the river.
+4.  After the outer boundary of the URC is delineated, **corridor segments** (CSs) are determined by dividing the URC along major transversal traffic lines. This way, spatially continuous units (i.e. uninterrupted by traffic barriers) are identified along the URC. The assumption made in this step is that urban areas between two major crossings have distinct morphological characteristics.
+5.  The **river space** is defined as the open space surrounding the river and delineated by the first line of buildings.
 
-Each city developed a specific spatial relationship with its river. Therefore, this method of delineation is not purely quantitative, as it requires a judgement of the morphological particularities of the site in question. This is especially the case for corridor segment delineation, where variations in distance between major crossings may lead to unbalanced subdivision. Although uncommon, if two consecutive major crossing are too close to each other (the case of narrow rivers), then adjacent segments can be merged. If they are too far from each other (the case of wide rivers), then the URC can be further subdivided.
-
-![](fig/delineation.jpg)
+Each city developed a specific spatial relationship with its river. Therefore, this method of delineation, requires a qualitative judgement of the morphological particularities of the site in question. This is especially the case for corridor segment delineation, where variations in distance between major crossings may lead to an unbalanced subdivision of the corridor. If two consecutive major crossing are too close to each other (the case of narrow rivers with many crossings), then adjacent segments with similar morphological characteristics can be merged. If they are too far from each other (the case of wide rivers), then the URC can be further subdivided.
 
 ![Delineation of URC Dâmbovița](fig/URC-D-delineation.png "Delineation of URC Dâmbovița")
 
