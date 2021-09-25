@@ -1,4 +1,4 @@
-# Social-Ecological Integrated Urban River Corridor Assessment Framework
+# Social-Ecologically Integrated Urban River Corridors - Assessment Framework
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
