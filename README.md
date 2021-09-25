@@ -4,7 +4,7 @@
 
 This repository contains the GIS application files used in the social-ecological integration assessment of the river Dâmbovița, Bucharest, as part of the PhD research "Integrated Urban River Corridors: Spatial Design for Social-Ecological Resilience in Bucharest and Beyond" ([Forgaci, 2018](https://doi.org/10.7480/abe.2018.31)), conducted at TU Delft under the supervision of Prof. Arjan van Timmeren, Prof. Machiel van Dorst, and [Dr. Jorge Gil](https://github.com/jorgegil), and in collaboration with Dr. Daniele Cannatella.
 
-The assessment framework consists of [an indicator system](#Indicator-system) and a [method of social-ecological integration assessment](#Method-of-social-ecological-integration-assessment), an it is carried out on [Corridor Segments (CS) as spatial-morphological units of the Urban River Corridor (URC)](#URC-and-CS-delineation) in question.
+The assessment framework consists of [an indicator system](#Indicator-system) and a [method of social-ecological integration assessment](#Method-of-social-ecological-integration-assessment), an it is carried out on [Corridor Segments (CS) as spatial-analytical units of the Urban River Corridor (URC)](#URC-and-CS-delineation) in question.
 
 ### URC and CS delineation
 
