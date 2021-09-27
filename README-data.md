@@ -8,23 +8,21 @@
 
 2.  [Methodological information](#2-Methodological-information)
 
-    2.1. [Description of methods](#Description-of-methods)
+    2.1. [Description of methods](#2-1-Description-of-methods)
 
-    2.2. [Instrument- or software-specific information](#Instrument-or-software-specific-information)
+    2.2. [Instrument- or software-specific information](#2-2-Instrument-or-software-specific-information)
 
-    2.3. [Software and data references](#Software-and-data-references)
+    2.3. [Software and data references](#2-3-Software-and-data-references)
 
 3.  [Data and file overview](#3-Data-and-file-overview)
 
-    3.1. [File formats and naming conventions](#File-formats-and-naming-conventions)
+    3.1. [File formats and naming conventions](#3-1-File-formats-and-naming-conventions)
 
-    3.2. [File list and descriptions](#File-list-and-descriptions)
+    3.2. [File list and descriptions](#3-2-File-list-and-descriptions)
 
-    3.3. [Versioning](#Versioning)
+    3.3. [Versioning](#3-3-Versioning)
 
 4.  [Sharing and access information](#4-Sharing-and-access-information)
-
-
 
 ## 1. General information
 
@@ -52,7 +50,7 @@
 
 ## 2. Methodological information
 
-### 2.1 Description of methods {#description-of-methods}
+### 2.1 Description of methods
 
 In preparation for the spatial analyses used in the assessment, geospatial data was obtained as follows:
 
@@ -67,9 +65,15 @@ For each indicator, the data was generated using the following steps:
 
 ### 2.2 Instrument- or software-specific information
 
-ArcGIS v10.2 and v10.3 were used to perform the analyses for most indicators, except for the spatial delineation of URC Dâmbovița and for the analysis of indicator `A121a` which was performed in QGIS 2.\#. The choice for ArcGIS or QGIS or for different versions thereof depended on the requirements of plugins used for specific analyses: - MatrixGreen v1.10.1 ([Bodin and Zetterberg, 2010](https://www.stockholmresilience.org/research/modelling-and-visualisation-lab/matrixgreen.html)) for ArcGIS v10.3.0 was used for the green network analysis of indicator `A211a`. - Axwoman v6.3 ([Jiang, 2015](http://giscience.hig.se/binjiang/Axwoman/)) for ArcGIS v10.2.0 was used to isolate the transversal roads used by indicator `A221`. - Space Syntax Toolkit (Gil et al., 2015) for QGIS v2.14 and above was used for the indicator `A121a`.
+ArcGIS v10.2 and v10.3 were used to perform the analyses for most indicators, except for the spatial delineation of URC Dâmbovița and for the analysis of indicator `A121a` which was performed in QGIS 2.\#. The choice for ArcGIS or QGIS or for different versions thereof depended on the requirements of plugins used for specific analyses:
 
-### 2.3 Software and data references {#software-and-data-references}
+-   MatrixGreen v1.10.1 ([Bodin and Zetterberg, 2010](https://www.stockholmresilience.org/research/modelling-and-visualisation-lab/matrixgreen.html)) for ArcGIS v10.3.0 was used for the green network analysis of indicator `A211a`.
+
+-   Axwoman v6.3 ([Jiang, 2015](http://giscience.hig.se/binjiang/Axwoman/)) for ArcGIS v10.2.0 was used to isolate the transversal roads used by indicator `A221`.
+
+-   [Space Syntax Toolkit](https://github.com/SpaceGroupUCL/qgisSpaceSyntaxToolkit) (Gil et al., 2015) for QGIS v2.14 and above was used for the indicator `A121a`.
+
+### 2.3 Software and data references
 
 -   Earth Resources Observation And Science (EROS) Center. (2017). Shuttle Radar Topography Mission (SRTM) 1 Arc-Second Global [Data set]. U.S. Geological Survey. <https://doi.org/10.5066/F7PR7TFT> [Data file from 2017-11-17]
 
@@ -85,7 +89,7 @@ ArcGIS v10.2 and v10.3 were used to perform the analyses for most indicators, ex
 
 ## 3. Data and file overview
 
-### 3.1 File formats and naming conventions {#file-formats-and-naming-conventions}
+### 3.1 File formats and naming conventions
 
 #### 3.1.1 Geospatial data
 
@@ -115,7 +119,7 @@ The list of indicators and the results of the assessment are stored in `CSV` fil
 
 -   The lowercase letter is optional and, if present, it represents *a specific method of measurement* of the spatial element indicated by the third digit.
 
-### 3.2 File list and descriptions {#file-list-and-descriptions}
+### 3.2 File list and descriptions
 
 #### 3.2.1 Geospatial data
 
@@ -248,7 +252,7 @@ The following features are stored in `URC-D.gpkg`:
 
 ### Additional related data collected
 
-### Versioning {#versioning}
+### 3.3 Versioning
 
 The data was generated between 2017-xx-xx and 2017-xx-xx by Claudiu Forgaci and Daniele Cannatella, and last reviewed on 2021-09-20 by Claudiu Forgaci.
 
