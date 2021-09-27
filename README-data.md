@@ -2,7 +2,7 @@
 
 # Dataset from the Social-Ecological Assessment of Urban River Corridor Dâmbovița, Bucharest, Romania
 
-## Table of Contents
+#### Table of Contents
 1. [General information](#1-General-information)
 2. [Methodological information](#2-Methodological-information)
 3. [Data and file overview](#3-Data-and-file-overview)
