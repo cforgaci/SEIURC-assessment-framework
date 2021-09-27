@@ -54,7 +54,6 @@ References:
 
 
 
-
 ## 3. Data and file overview
 
 ### 3.1 File formats and naming conventions
