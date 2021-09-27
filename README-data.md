@@ -265,4 +265,4 @@ The following features are stored in `URC-D.gpkg`:
 -   License: CC-BY-4.0
 -   Publication: https://doi.org/10.7480/abe.2018.31
 -   Locations of data: 4TU.ResearchData
--   Citation: Forgaci, C. (2021). Social-Ecological Assessment of Urban River Corridor Dâmbovița, Bucharest, Romania [Data set]. https://doi.org/10.4121/15126795.v2
+-   Citation: Forgaci, C. (2021). Social-Ecological Assessment of Urban River Corridor Dâmbovița, Bucharest, Romania [Data set]. https://doi.org/10.4121/15126795
