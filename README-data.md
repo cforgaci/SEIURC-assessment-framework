@@ -159,9 +159,15 @@ The following features are stored in `URC-D.gpkg`:
     -   `definition` - definition of what is measured and how the measurement is standardized on the three-point assessment scale
     -   `source` - literature reference, if any
 
--   `URC-D-assessment.csv` - a table with the summary of assessment scores
+-   `URC-D-assessment-all.csv` - a table with the summary of all scores
 
-    -   
+    -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.)
+    -   columns summarising the scores for each indicator
+
+-   `URC-D-assessment-minimum.csv` - a table with the summary of assessment scores
+
+    -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.)
+    -   columns summarising the minimum scores for each sub-category of the indicator system
 
 -   `A111a-results.csv` - Slow mobility routes - continuity
 
