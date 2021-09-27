@@ -6,6 +6,7 @@
 
 #### Table of Contents
 
+
 1.  [General information](#1-General-information)
 
 2.  [Methodological information](#2-Methodological-information)
@@ -40,13 +41,17 @@
 
         -   Name: Claudiu Forgaci
         -   Institution: Delft University of Technology
-        -   Email: [C.Forgaci\@tudelft.nl](mailto:C.Forgaci@tudelft.nl)
+        -   Email: C.Forgaci@tudelft.nl
 
     -   Associated study personnel:
 
         -   Name: Daniele Cannatella
         -   Institution: Delft University of Technology
-        -   Email: [D.Cannatella\@tudelft.nl](mailto:D.Cannatella@tudelft.nl)
+        -   Email: D.Cannatella@tudelft.nl
+
+        -   Name: Vincent Babes
+        -   Institution: Delft University of Technology
+        -   Email: vincent_babes@yahoo.com
 
 -   Funding sources: EIT Climate-KIC
 
@@ -172,7 +177,7 @@ The following features are stored in `URC-D.gpkg`:
 
 -   `A121a-results.csv` - Accessibility - network
 
-    -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.)
+    -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.). An additional row with the id `city` includes values for the city as a whole.
     -   `TLEN1` - total length of streets in `segment` with a low integration value
     -   `TLEN2` - total length of streets in `segment` with a medium integration value
     -   `TLEN3` - total length of streets in `segment` with a high integration value
@@ -183,10 +188,10 @@ The following features are stored in `URC-D.gpkg`:
 
 -   `A121c-results.csv` - Accessibility - visitors
 
-    -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.)
-    -   `total_length` - total length of river bank within `segment`
-    -   `service area length` [rename to `accessible_length`]- length of river bank that falls within public transport service areas within `segment`
-    -   `value` - measured value for `segment`; unit of measurement depends on indicator: percentage of `service area length` out of `total length`
+    -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.). 
+    -   `length_riverbanks` - total length of river bank within `segment`
+    -   `length_service_area` - length of river bank that falls within public transport service areas within `segment`
+    -   `value` - measured value for `segment`; unit of measurement depends on indicator: percentage of `length_service_area` out of `length_riverbanks`
     -   `index` - standardized score of the measured `value` for `segment`; `1` is low, `2` is medium, `3` is high
 
 -   `A123a-results.csv` - Crossability - linear density of crossings
@@ -210,12 +215,16 @@ The following features are stored in `URC-D.gpkg`:
 -   `A131a-results.csv` - Contact with water - points
 
     -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.)
-    -   `bridges` - number of bridges within `segment`
-    -   `length` - length of river measured on the river center line within `segment`
-    -   `value` - measured value for `segment`; unit of measurement depends on indicator: linear density of bridges calculated as `length` / `bridges`
+    -   `contact_points` - number of contact points within `segment`
+    -   `length_riverbanks` - length of river measured on the river center line within `segment`
+    -   `value` - measured value for `segment`; unit of measurement depends on indicator: `contact_points` / `length_riverbanks`
     -   `index` - standardized score of the measured `value` for `segment`; `1` is low, `2` is medium, `3` is high
 
 -   `A211a-results.csv` - Landscape connectivity - connected components
+
+    -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.)
+    -   `value` - connectedness across `segment`
+    -   `index` - standardized score of the measured `value` for `segment`; `1` is low, `2` is medium, `3` is high
 
 -   `A221-results.csv` - Presence of transversal corridors
 
@@ -235,28 +244,51 @@ The following features are stored in `URC-D.gpkg`:
 -   `A231-results.csv` - Presence of ecotones
 
     -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.)
-
     -   `length_riverbanks` - total length of riverbanks within `segment`
-
     -   `length_ecotones` - total length of observed ecotones within `segment`
-
     -   `value` - measured value for `segment`; unit of measurement depends on indicator: percentage of `length_ecotones` out of `length_riverbanks`
-
     -   `index` - standardized score of the measured `value` for `segment`; `1` is low, `2` is medium, `3` is high
 
 -   `B111a-results.csv` - Diversity of land uses - patch richness diversity
 
-    -   
+    -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.)
+    -   `value` - measured value for `segment`; unit of measurement depends on indicator: patch richness density (PRD) PRD < 0.25, 0.25 <= PRD < 0.75, PRD >= 0.75
+    -   `index` - standardized score of the measured `value` for `segment`; `1` is low, `2` is medium, `3` is high 
 
 -   `B121a-results.csv` - Visual permeability - % of visible riverspace
 
+    -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.)
+    -   `visible` - area visible in a 150m buffer from the river edges
+    -   `total` - total area of the 150m buffer from the river edges
+    -   `value` - measured value for `segment`; unit of measurement depends on indicator: percentage of `visible` out of `total`
+    -   `index` - standardized score of the measured `value` for `segment`; `1` is low, `2` is medium, `3` is high 
+
 -   `B132a-results.csv` - Waterfront constitutedness - configuration
+
+    -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.)
+    -   `value` - percentage of the total length of built fronts projected on the river edge out of the total length of river edges, corrected with a coefficient of fragmentation(standard deviation from maximum potential constitutedness)
+    -   `index` - standardized score of the measured `value` for `segment`; `1` is low, `2` is medium, `3` is high 
 
 -   `B211-results.csv` - Biodiversity - presence of species-rich areas
 
+    -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.)
+    -   `value` - presence of species rich areas with three possible values: low, medium or high
+    -   `index` - standardized score of the measured `value` for `segment`; `1` is low, `2` is medium, `3` is high 
+
 -   `B224-results.csv` - Respect of natural dynamics
 
--   `B231a-results.csv` - Coverage - % open space
+    -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.)
+    -   `value` - riverbanks classified as highly disturbed, moderately disturbed or undisturbed
+    -   `index` - standardized score of the measured `value` for `segment`; `1` is low, `2` is medium, `3` is high 
+
+-   `B231a-results.csv` - Coverage - % of total open space
+
+    -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.)
+    -   `built` - built-up area
+    -   `open_space` - area of open spaces
+    -   `water` - water area
+    -   `value` - percentage of all unbuilt spaces excluding the area occupied by road infrastructure and water
+    -   `index` - standardized score of the measured `value` for `segment`; `1` is low, `2` is medium, `3` is high 
 
 
 
