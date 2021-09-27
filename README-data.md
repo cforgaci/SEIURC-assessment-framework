@@ -31,7 +31,7 @@
 In preparation for the spatial analyses used in the assessment, geospatial data was obtained as follows:
 
 1.  The boundary and segments of the URC were drawn based on the delineation method described in ([Forgaci, 2018, pp.88-89](https://doi.org/10.7480/abe.2018.31))
-2.  Relevant vector and raster data openlty accessible from OpenSteetMap (2015), Urban Atlas (EEA, 2010), and ASTER GDEM were clipped to the URC boundary and saved as base geospatial layers to be used in the spatial analyses.
+2.  Relevant vector and raster data openlty accessible from OpenSteetMap (2015), Urban Atlas (EEA, 2010), and SRTM (EROS, 2017) were clipped to the URC boundary and saved as base geospatial layers to be used in the spatial analyses.
 
 For each indicator, the data was generated using the following steps:
 
@@ -48,9 +48,7 @@ ArcGIS v10.2 and v10.3 were used to perform the analyses for most indicators, ex
 
 ## 2.3 Software and data references
 
-- ASTER GDEM from 2018 was retrieved on YYYY_MM_DD from https://lpdaac.usgs.gov, maintained by the NASA EOSDIS Land Processes Distributed Active Archive Center (LP DAAC) at the USGS Earth Resources Observation and Science (EROS) Center, Sioux Falls, South Dakota. 2018, https://lpdaac.usgs.gov/resources/data-action/aster-ultimate-2018-winter-olympics-observer/.
-
-ASTER GDEM is a product of Japan’s Ministry of Economy, Trade, and Industry (METI) and NASA.
+- Earth Resources Observation And Science (EROS) Center. (2017). Shuttle Radar Topography Mission (SRTM) 1 Arc-Second Global [Data set]. U.S. Geological Survey. https://doi.org/10.5066/F7PR7TFT [Data file from 2017-11-17]
 
 - Bodin, Ö. and A. Zetterberg (2010) MatrixGreen User's Manual: Landscape Ecological Network Analysis Tool. Stockholm university and Royal Institute of Technology (KTH), Stockholm.
 
@@ -60,7 +58,7 @@ ASTER GDEM is a product of Japan’s Ministry of Economy, Trade, and Industry (M
 
 - Jiang B. (2015), Axwoman 6.3: An ArcGIS extension for urban morphological analysis, http://giscience.hig.se/binjiang/Axwoman/, University of Gävle, Sweden.
 
-- OpenStreetMap contributors. (2015) Planet dump [Data file from ???]. Retrieved from https://planet.openstreetmap.org.
+- OpenStreetMap contributors. (2015) Planet dump [Data file from 2017-11-14]. Retrieved from https://planet.openstreetmap.org.
 
 
 
