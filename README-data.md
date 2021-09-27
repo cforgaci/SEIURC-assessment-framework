@@ -10,13 +10,13 @@
 
         -   Name: Claudiu Forgaci
         -   Institution: Delft University of Technology
-        -   Email: [C.Forgaci\@tudelft.nl](mailto:C.Forgaci@tudelft.nl){.email}
+        -   Email: [C.Forgaci\@tudelft.nl](mailto:C.Forgaci@tudelft.nl)
 
     -   Associated study personnel:
 
         -   Name: Daniele Cannatella
         -   Institution: Delft University of Technology
-        -   Email: [D.Cannatella\@tudelft.nl](mailto:D.Cannatella@tudelft.nl){.email}
+        -   Email: [D.Cannatella\@tudelft.nl](mailto:D.Cannatella@tudelft.nl)
 
 -   Funding sources: EIT Climate-KIC
 
