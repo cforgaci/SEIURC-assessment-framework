@@ -41,13 +41,12 @@ For each indicator, the data was generated using the following steps:
 
 ### 2.2 Instrument- or software-specific information
 
--   ArcGIS v10.2 and v10.3 were used to perform the analyses for indicators all indicators.
+ArcGIS v10.2 and v10.3 were used to perform the analyses for most indicators, except for the spatial delineation of URC Dâmbovița and for the analysis of indicator `A121a` which was performed in QGIS 2.#. The choice for ArcGIS or QGIS or different versions thereof depended on the requirements of plugins used for specific analyses:
 -   MatrixGreen v1.10.1 (Bodin and Zetterberg, 2010) for ArcGIS v10.3.0 was used for the green network analysis of indicator `A211a`.
 -   Axwoman v6.3 (Jiang, 2015) for ArcGIS v10.2.0 was used to isolate the transversal roads used by indicator `A221`.
--   QGIS 2.# was used to perform the analyses for the delineation of URC Dâmbovița and for the analysis of indicators `A121a` and `A211a`.
 -   Space Syntax Toolkit for QGIS v2.14 and above was used for the indicator `A121a`.
 
-Software references:
+References:
 
 - Bodin, Ö. and A. Zetterberg (2010) MatrixGreen User's Manual: Landscape Ecological Network Analysis Tool. Stockholm university and Royal Institute of Technology (KTH), Stockholm.
 
