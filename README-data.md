@@ -46,7 +46,9 @@
 
 -   Funding sources: EIT Climate-KIC
 
--   Dates of data generation: 2017
+-   Dates of data generation: The data was generated between 2017-11-14 and 2018-06-25 by Claudiu Forgaci and Daniele Cannatella, and last reviewed on 2021-09-27 by Claudiu Forgaci.
+
+
 
 ## 2. Methodological information
 
@@ -86,6 +88,8 @@ ArcGIS v10.2 and v10.3 were used to perform the analyses for most indicators, ex
 -   Jiang B. (2015), Axwoman 6.3: An ArcGIS extension for urban morphological analysis, <http://giscience.hig.se/binjiang/Axwoman/>, University of Gävle, Sweden.
 
 -   OpenStreetMap contributors. (2015) Planet dump [Data file from 2017-11-14]. Retrieved from <https://planet.openstreetmap.org>.
+
+
 
 ## 3. Data and file overview
 
@@ -250,11 +254,7 @@ The following features are stored in `URC-D.gpkg`:
 
 -   `B231a-results.csv` - Coverage - % open space
 
-### Additional related data collected
 
-### 3.3 Versioning
-
-The data was generated between 2017-xx-xx and 2017-xx-xx by Claudiu Forgaci and Daniele Cannatella, and last reviewed on 2021-09-20 by Claudiu Forgaci.
 
 ## 4. Sharing and access information
 
