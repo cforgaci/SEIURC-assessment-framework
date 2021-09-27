@@ -28,10 +28,10 @@
 
 ### 2.1 Description of methods
 
-In preparation to the spatial analyses used in the assessment, geospatial data was obtained as follows:
+In preparation for the spatial analyses used in the assessment, geospatial data was obtained as follows:
 
 1.  The boundary and segments of the URC were drawn based on the delineation method described in ([Forgaci, 2018, pp.88-89](https://doi.org/10.7480/abe.2018.31))
-2.  Relevant features from openly accessible data from OpenSteetMap, EEA Urban Atlas, and ASTER GDEM were clipped within the URC boundary and saved as the base geospatial layers to be used in the spatial analyses.
+2.  Relevant vector and raster data openlty accessible from OpenSteetMap (2015), Urban Atlas (EEA, 2010), and ASTER GDEM were clipped to the URC boundary and saved as base geospatial layers to be used in the spatial analyses.
 
 For each indicator, the data was generated using the following steps:
 
@@ -42,15 +42,25 @@ For each indicator, the data was generated using the following steps:
 ### 2.2 Instrument- or software-specific information
 
 ArcGIS v10.2 and v10.3 were used to perform the analyses for most indicators, except for the spatial delineation of URC Dâmbovița and for the analysis of indicator `A121a` which was performed in QGIS 2.#. The choice for ArcGIS or QGIS or different versions thereof depended on the requirements of plugins used for specific analyses:
--   MatrixGreen v1.10.1 (Bodin and Zetterberg, 2010) for ArcGIS v10.3.0 was used for the green network analysis of indicator `A211a`.
--   Axwoman v6.3 (Jiang, 2015) for ArcGIS v10.2.0 was used to isolate the transversal roads used by indicator `A221`.
--   Space Syntax Toolkit for QGIS v2.14 and above was used for the indicator `A121a`.
+-   MatrixGreen v1.10.1 ([Bodin and Zetterberg, 2010](https://www.stockholmresilience.org/research/modelling-and-visualisation-lab/matrixgreen.html)) for ArcGIS v10.3.0 was used for the green network analysis of indicator `A211a`.
+-   Axwoman v6.3 ([Jiang, 2015](http://giscience.hig.se/binjiang/Axwoman/)) for ArcGIS v10.2.0 was used to isolate the transversal roads used by indicator `A221`.
+-   Space Syntax Toolkit (Gil et al., 2015) for QGIS v2.14 and above was used for the indicator `A121a`.
 
-References:
+## 2.3 Software and data references
+
+- ASTER GDEM from 2018 was retrieved on YYYY_MM_DD from https://lpdaac.usgs.gov, maintained by the NASA EOSDIS Land Processes Distributed Active Archive Center (LP DAAC) at the USGS Earth Resources Observation and Science (EROS) Center, Sioux Falls, South Dakota. 2018, https://lpdaac.usgs.gov/resources/data-action/aster-ultimate-2018-winter-olympics-observer/.
+
+ASTER GDEM is a product of Japan’s Ministry of Economy, Trade, and Industry (METI) and NASA.
 
 - Bodin, Ö. and A. Zetterberg (2010) MatrixGreen User's Manual: Landscape Ecological Network Analysis Tool. Stockholm university and Royal Institute of Technology (KTH), Stockholm.
 
+- EEA, 2010, Mapping guide for a European Urban Atlas, European Environment Agency, Copenhagen, http://www.eea.europa.eu/data-and-maps/data/urban-atlas#tab-methodology.
+
+- Gil, J., Varoudis, T., Karimi, K., Penn, A., 2015. The Space Syntax Toolkit: integrating depthmapX and exploratory spatial analysis workflows in QGIS, in: Proceedings of the 10th International Space Syntax Symposium, University College London, London, UK, p. 148:1-148:12.
+
 - Jiang B. (2015), Axwoman 6.3: An ArcGIS extension for urban morphological analysis, http://giscience.hig.se/binjiang/Axwoman/, University of Gävle, Sweden.
+
+- OpenStreetMap contributors. (2015) Planet dump [Data file from ???]. Retrieved from https://planet.openstreetmap.org.
 
 
 
