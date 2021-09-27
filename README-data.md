@@ -142,11 +142,11 @@ The following features are stored in `URC-D.gpkg`:
 
 -   `URC-D-segments` - a vector feature with `URC-D-boundary`, segmented according to the method described in ([Forgaci, 2018, pp.88-89](https://doi.org/10.7480/abe.2018.31))
 
--   `URC-D-buildings` - a vector feature extracted from OpenStreetMap (..-..-..) of all buildings located within `URC-D-boundary`.
+-   `URC-D-buildings` - a vector feature extracted from OpenStreetMap (2017-11-14) of all buildings located within `URC-D-boundary`.
 
--   `URC-D-river-line` - a vector feature extracted from OpenStreetMap (..-..-..) of the center line of the river Dâmbovița.
+-   `URC-D-river-line` - a vector feature extracted from OpenStreetMap (2017-11-14) of the center line of the river Dâmbovița.
 
--   `URC-D-river-polygon` - a vector feature extracted from OpenStreetMap (..-..-..) of the river surface as a polygon.
+-   `URC-D-river-polygon` - a vector feature extracted from OpenStreetMap (2017-11-14) of the river surface as a polygon.
 
 -   `URC-D-DEM` - a raster feature with the digital elevation model of the area within `URC-D-boundary`.
 
