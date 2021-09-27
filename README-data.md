@@ -80,7 +80,7 @@ Geospatial data files in this dataset are named `URC-I.gpkg` and comprise vector
 
 -   `layer-name` is the name of the layer used for analysis and can be `boundary`, `segments`, `buildings`, `streets`, `green-spaces`, `river-line`, `river-polygon`, `DEM`, or `satellite`.
 
-All geospatial data in this dataset use the Coordinate Reference System (CRS) EPSG:31700 - Dealul Piscului 1970/ Stereo 70.
+All geospatial data in this dataset use the European Terrestrial Reference System 1989 (ETRS89).
 
 #### 3.1.2 Assessment data
 
