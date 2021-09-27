@@ -41,12 +41,12 @@ For each indicator, the data was generated using the following steps:
 
 ### 2.2 Instrument- or software-specific information
 
-ArcGIS v10.2 and v10.3 were used to perform the analyses for most indicators, except for the spatial delineation of URC Dâmbovița and for the analysis of indicator `A121a` which was performed in QGIS 2.#. The choice for ArcGIS or QGIS or different versions thereof depended on the requirements of plugins used for specific analyses:
+ArcGIS v10.2 and v10.3 were used to perform the analyses for most indicators, except for the spatial delineation of URC Dâmbovița and for the analysis of indicator `A121a` which was performed in QGIS 2.#. The choice for ArcGIS or QGIS or for different versions thereof depended on the requirements of plugins used for specific analyses:
 -   MatrixGreen v1.10.1 ([Bodin and Zetterberg, 2010](https://www.stockholmresilience.org/research/modelling-and-visualisation-lab/matrixgreen.html)) for ArcGIS v10.3.0 was used for the green network analysis of indicator `A211a`.
 -   Axwoman v6.3 ([Jiang, 2015](http://giscience.hig.se/binjiang/Axwoman/)) for ArcGIS v10.2.0 was used to isolate the transversal roads used by indicator `A221`.
 -   Space Syntax Toolkit (Gil et al., 2015) for QGIS v2.14 and above was used for the indicator `A121a`.
 
-## 2.3 Software and data references
+### 2.3 Software and data references
 
 - Earth Resources Observation And Science (EROS) Center. (2017). Shuttle Radar Topography Mission (SRTM) 1 Arc-Second Global [Data set]. U.S. Geological Survey. https://doi.org/10.5066/F7PR7TFT [Data file from 2017-11-17]
 
