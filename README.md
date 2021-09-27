@@ -36,8 +36,17 @@ To account for local characteristics, this method of delineation requires a qual
 
 ## Application on URC Dâmbovița, Bucharest
 
-The assessment was carried out on a selection of indicators on URC Dâmbovița, Bucharest. An example of the results for one indicator is illustrated below. [`URC-D-analyses`](URC-D-analyses/) contains `.mxd` files with the analyses carried out in ESRI ArcMap v10.2 and v10.3. [`URC-D-data`](URC-D-data/) contains the geospatial data used for the analyses. For most indicators selected for assessment, the analytical workflows were saved with ArcMap's ModelBuilder. For indicators where the workflow was not recorded in an ArcMap model, a detailed description of the analytical steps was provided in a text file.
+The assessment was carried out on a selection of indicators on URC Dâmbovița, Bucharest. An example of the results for one indicator is illustrated below. [`URC-D-analyses/`](URC-D-analyses/) contains `.mxd` files with the analyses carried out in ESRI ArcMap v10.2 and v10.3. [`URC-D-data/`](URC-D-data/) contains the geospatial data used for the analyses. For most indicators selected for assessment, the analytical workflows were saved with ArcMap's ModelBuilder. For indicators where the workflow was not recorded in an ArcMap model, a detailed description of the analytical steps was provided in a text file.
+
+To reproduce the analyses for URC Dâmbovița, follow these steps:
+
+1. For each indicator in `URC-D-analyses/`, run the models in ArcMap or follow the steps described in [Appendix E](https://journals.open.tudelft.nl/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fjournals.open.tudelft.nl%2Fabe%2Farticle%2Fdownload%2F3275%2F3447%2F8841#9789463661096-TXT.indd%3A.322609%3A59470) of Integrated Urban River Corridors ([Forgaci, 2018](https://doi.org/10.7480/abe.2018.31)). 
+
+2. Translate the values resulting from analysis into standardized scores according to the indicator definitions described in https://doi.org/10.4121/15126795 and add the scores to the score chart.
+
+3. Run the script `assess.R` to determine the minimum desirable goal and to identify potentials of improved social-ecological integration in each corridor segment.
+
+![Results for indicator A121c](fig/A121c.png "Results for indicator A121c") Accessibility from public transport stops (A121c Accessibility – visitors), as an example of a connectivity indicator applied on URC Dâmbovița and detailed on corridor segment CS03.
 
 Detailed descriptions of the workflows and software used in the application of each indicator are also available in [Appendix E](https://journals.open.tudelft.nl/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fjournals.open.tudelft.nl%2Fabe%2Farticle%2Fdownload%2F3275%2F3447%2F8841#9789463661096-TXT.indd%3A.322609%3A59470) of Integrated Urban River Corridors ([Forgaci, 2018](https://doi.org/10.7480/abe.2018.31)). The data set with the assessment results for URC Dâmbovița can be found at <https://doi.org/10.4121/15126795>. The assessment framework and its application are described in detail in [Chapters 5 and 6](https://journals.open.tudelft.nl/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fjournals.open.tudelft.nl%2Fabe%2Farticle%2Fdownload%2F3275%2F3447%2F8841#9789463661096-TXT.indd%3A.322290%3A59394) of Integrated Urban River Corridors ([Forgaci, 2018](https://doi.org/10.7480/abe.2018.31)), respectively.
 
-![Results for indicator A121c](fig/A121c.png "Results for indicator A121c") Accessibility from public transport stops (A121c Accessibility – visitors), as an example of a connectivity indicator applied on URC Dâmbovița and detailed on corridor segment CS03.
