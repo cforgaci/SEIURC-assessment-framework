@@ -41,11 +41,20 @@ For each indicator, the data was generated using the following steps:
 
 ### 2.2 Instrument- or software-specific information
 
--   ArcGIS \#.\# was used to perform the analyses for indicators ...
--   QGIS \#.\# was used to perform the analyses for the delineation of URC Dâmbovița and for the analysis of indicators `A121a` and `A211a`.
--   The ArcGIS tool MatrixGreen v\#.\# was used for the indicator `A211a`.
--   The ArcGIS tool Axwoman v\#.\# was used for the indicator `A221`
--   The QGIS plugin Space Syntax Toolkit was used for the indicator `A121a`.
+-   ArcGIS v10.2 and v10.3 were used to perform the analyses for indicators all indicators.
+-   MatrixGreen v1.10.1 (Bodin and Zetterberg, 2010) for ArcGIS v10.3.0 was used for the green network analysis of indicator `A211a`.
+-   Axwoman v6.3 (Jiang, 2015) for ArcGIS v10.2.0 was used to isolate the transversal roads used by indicator `A221`.
+-   QGIS 2.# was used to perform the analyses for the delineation of URC Dâmbovița and for the analysis of indicators `A121a` and `A211a`.
+-   Space Syntax Toolkit for QGIS v2.14 and above was used for the indicator `A121a`.
+
+Software references:
+
+- Bodin, Ö. and A. Zetterberg (2010) MatrixGreen User's Manual: Landscape Ecological Network Analysis Tool. Stockholm university and Royal Institute of Technology (KTH), Stockholm.
+
+- Jiang B. (2015), Axwoman 6.3: An ArcGIS extension for urban morphological analysis, http://giscience.hig.se/binjiang/Axwoman/, University of Gävle, Sweden.
+
+
+
 
 ## 3. Data and file overview
 
