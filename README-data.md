@@ -2,6 +2,8 @@
 
 # Dataset from the Social-Ecological Assessment of Urban River Corridor Dâmbovița, Bucharest, Romania
 
+
+
 #### Table of Contents
 
 1.  [General information](#1-General-information)
@@ -23,6 +25,8 @@
     3.3. [Versioning](#3-3-Versioning)
 
 4.  [Sharing and access information](#4-Sharing-and-access-information)
+
+
 
 ## 1. General information
 
@@ -54,12 +58,12 @@
 
 ### 2.1 Description of methods
 
-In preparation for the spatial analyses used in the assessment, geospatial data was obtained as follows:
+In preparation for the spatial analyses used in the assessment, [geospatial data](#3-1-1-Geospatial-data) was obtained as follows:
 
-1.  The boundary and segments of the URC were drawn based on the delineation method described in ([Forgaci, 2018, pp.88-89](https://doi.org/10.7480/abe.2018.31))
-2.  Relevant vector and raster data openlty accessible from OpenSteetMap (2015), Urban Atlas (EEA, 2010), and SRTM (EROS, 2017) were clipped to the URC boundary and saved as base geospatial layers to be used in the spatial analyses.
+1.  The boundary and segments of the URC were drawn based on the delineation method described in ([Forgaci, 2018, pp. 88-89](https://doi.org/10.7480/abe.2018.31))
+2.  Relevant vector and raster data openly accessible from OpenSteetMap (2015), Urban Atlas (EEA, 2010), and SRTM (EROS, 2017) were clipped to the URC boundary and saved as base geospatial layers to be used in the spatial analyses.
 
-For each indicator, the data was generated using the following steps:
+For each indicator, the assessment data was generated using the following steps:
 
 1.  Indicator-specific spatial analyses were carried out and the results were recorded.
 
@@ -259,6 +263,6 @@ The following features are stored in `URC-D.gpkg`:
 ## 4. Sharing and access information
 
 -   License: CC-BY-4.0
--   Publication: [\<https://doi.org/10.7480/abe.2018.31\>](https://doi.org/10.7480/abe.2018.31){.uri}
--   Locations of data:
--   Citation:
+-   Publication: https://doi.org/10.7480/abe.2018.31
+-   Locations of data: 4TU.ResearchData
+-   Citation: Forgaci, C. (2021). Social-Ecological Assessment of Urban River Corridor Dâmbovița, Bucharest, Romania [Data set]. https://doi.org/10.4121/15126795.v2
