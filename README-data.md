@@ -60,13 +60,13 @@ References:
 
 #### 3.1.1 Geospatial data
 
-Geospatial data is stored in the open, non-proprietary, platform-independent and standard-based GeoPackage (`GPKG)` format. It uses an SQLite container that can store multiple features, both vector and raster, and a wide variety of formats, which makes it an portable and accessible format for small-sized datasets.
+Geospatial data is stored in the open, non-proprietary, platform-independent and standard-based GeoPackage (`GPKG`) format. `GPKG` uses an SQLite container that can store multiple features, both vector and raster, and a wide variety of formats, which makes it a portable and accessible format for small-sized datasets.
 
 Geospatial data files in this dataset are named `URC-I.gpkg` and comprise vector and raster features named as `URC-I-layer-name`, where:
 
 -   `URC` indicates that the data is a layer of an Urban River Corridor.
 
--   `I` is the initial of the river, which is either `D` for river Dâmbovița or `C` for river Colentina.
+-   `I` is the initial of the river, which is `D` for river Dâmbovița.
 
 -   `layer-name` is the name of the layer used for analysis and can be `boundary`, `segments`, `buildings`, `streets`, `green-spaces`, `river-line`, `river-polygon`, `DEM`, or `satellite`.
 
