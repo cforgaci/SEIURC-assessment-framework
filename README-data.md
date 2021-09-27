@@ -4,7 +4,7 @@
 
 -   Title of the dataset: Social-Ecological Assessment of Urban River Corridor Dâmbovița, Bucharest, Romania
 
--   Description: This dataset contains data generated in the Social-Ecological Assessment of Urban River Corridor (URC) Dâmbovița, Bucharest, Romania, as part of the PhD research "Integrated Urban River Corridors: Spatial Design for Social-Ecological Resilience in Bucharest and Beyond" ([Forgaci, 2018](https://doi.org/10.7480/abe.2018.31){:target="\_blank"}), conducted at TU Delft in 2017. The dataset consists of the geospatial data used for the spatial analyses of URC Dâmbovița and assessment data, including the results of analyses for each indicator used in the assessment.
+-   Description: This dataset contains data generated in the Social-Ecological Assessment of Urban River Corridor (URC) Dâmbovița, Bucharest, Romania, as part of the PhD research "Integrated Urban River Corridors: Spatial Design for Social-Ecological Resilience in Bucharest and Beyond" ([Forgaci, 2018](https://doi.org/10.7480/abe.2018.31)), conducted at TU Delft in 2017. The dataset consists of the geospatial data used for the spatial analyses of URC Dâmbovița and assessment data, including the results of analyses for each indicator used in the assessment.
 
 -   Contact information:
 
