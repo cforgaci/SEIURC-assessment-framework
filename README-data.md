@@ -1,3 +1,5 @@
+<!-- Note: README.pdf is a rendered version of this README.md file. -->
+
 ## 1. General information
 
 -   Title of the dataset: Social-Ecological Assessment of Urban River Corridor Dâmbovița, Bucharest, Romania
@@ -26,7 +28,7 @@
 
 ### 2.1 Description of methods
 
-Geospatial data was obtained from OpenStreetMap:
+In preparation to the spatial analyses used in the assessment, geospatial data was obtained as follows:
 
 1.  The boundary and segments of the URC were drawn based on the delineation method described in ([Forgaci, 2018, pp.88-89](https://doi.org/10.7480/abe.2018.31))
 2.  Relevant features from openly accessible data from OpenSteetMap, EEA Urban Atlas, and ASTER GDEM were clipped within the URC boundary and saved as the base geospatial layers to be used in the spatial analyses.
@@ -41,7 +43,8 @@ For each indicator, the data was generated using the following steps:
 
 -   ArcGIS \#.\# was used to perform the analyses for indicators ...
 -   QGIS \#.\# was used to perform the analyses for the delineation of URC Dâmbovița and for the analysis of indicators `A121a` and `A211a`.
--   The ArcGIS tool MatrixGreen was used for the indicator `A211a`.
+-   The ArcGIS tool MatrixGreen v\#.\# was used for the indicator `A211a`.
+-   The ArcGIS tool Axwoman v\#.\# was used for the indicator `A221`
 -   The QGIS plugin Space Syntax Toolkit was used for the indicator `A121a`.
 
 ## 3. Data and file overview
@@ -101,6 +104,7 @@ The following features are stored in `URC-D.gpkg`:
     -   `id` - unique indicator name as defined in Section 3.1.2
     -   `name` - the name of the indicator
     -   `definition` - definition of what is measured and how the measurement is standardized on the three-point assessment scale
+    -   `source` - literature reference, if any
 
 -   `URC-D-assessment.csv` - a table with the summary of assessment scores
 
@@ -108,38 +112,38 @@ The following features are stored in `URC-D.gpkg`:
 
 -   `A111a-results.csv` - Slow mobility routes - continuity
 
-    -   `segment` - unique number of the corridor segment for which the measurement is recorded
+    -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.)
     -   `value` - measured value for `segment`; unit of measurement depends on indicator
     -   `index` - standardized score of the measured `value` for `segment`; `1` is low, `2` is medium, `3` is high
 
 -   `A111b-results.csv` - Slow mobility routes - %
 
-    -   `segment` - unique number of the corridor segment for which the measurement is recorded
+    -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.)
     -   `value` - measured value for `segment`; unit of measurement depends on indicator
     -   `index` - standardized score of the measured `value` for `segment`; `1` is low, `2` is medium, `3` is high
 
 -   `A121a-results.csv` - Accessibility - network
 
-    -   `segment` - unique number of the corridor segment for which the measurement is recorded
+    -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.)
     -   `TLEN1` - total length of streets in `segment` with a low integration value
     -   `TLEN2` - total length of streets in `segment` with a medium integration value
     -   `TLEN3` - total length of streets in `segment` with a high integration value
     -   `value1` - percentage of the total length of streets in `segment` with a low integration value
-    -   `value1` - percentage of the total length of streets in `segment` with a medium integration value
-    -   `value1` - percentage of the total length of streets in `segment` with a high integration value
+    -   `value2` - percentage of the total length of streets in `segment` with a medium integration value
+    -   `value3` - percentage of the total length of streets in `segment` with a high integration value
     -   `index` - standardized score of the measured `value` for `segment`; `1` is low, `2` is medium, `3` is high
 
 -   `A121c-results.csv` - Accessibility - visitors
 
-    -   `segment` - unique number of the corridor segment for which the measurement is recorded
-    -   `total length` - total length of river bank within `segment`
-    -   `service area length` - length of river bank that falls within public transport service areas within `segment`
+    -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.)
+    -   `total_length` - total length of river bank within `segment`
+    -   `service area length` [rename to `accessible_length`]- length of river bank that falls within public transport service areas within `segment`
     -   `value` - measured value for `segment`; unit of measurement depends on indicator: percentage of `service area length` out of `total length`
     -   `index` - standardized score of the measured `value` for `segment`; `1` is low, `2` is medium, `3` is high
 
 -   `A123a-results.csv` - Crossability - linear density of crossings
 
-    -   `segment` - unique number of the corridor segment for which the measurement is recorded
+    -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.)
     -   `bridges` - number of bridges within `segment`
     -   `length` - length of river measured on the river center line within `segment`
     -   `value` - measured value for `segment`; unit of measurement depends on indicator: linear density of bridges calculated as `length` / `bridges`
@@ -147,7 +151,7 @@ The following features are stored in `URC-D.gpkg`:
 
 -   `A123b-results.csv` - Crossability - river width
 
-    -   `segment` - unique number of the corridor segment for which the measurement is recorded
+    -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.)
     -   `min_value` - the shortes river width within `segment`
     -   `max_value` - the longest river width within `segment`
     -   `std` - standard deviation, the distribution of river widths within `segment`
@@ -157,15 +161,44 @@ The following features are stored in `URC-D.gpkg`:
 
 -   `A131a-results.csv` - Contact with water - points
 
+    -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.)
+    -   `bridges` - number of bridges within `segment`
+    -   `length` - length of river measured on the river center line within `segment`
+    -   `value` - measured value for `segment`; unit of measurement depends on indicator: linear density of bridges calculated as `length` / `bridges`
+    -   `index` - standardized score of the measured `value` for `segment`; `1` is low, `2` is medium, `3` is high
+
 -   `A211a-results.csv` - Landscape connectivity - connected components
 
 -   `A221-results.csv` - Presence of transversal corridors
 
+    -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.)
+    -   `length_transversal` - total length of transversal streets within `segment`
+    -   `length_transversal_green` - length of of transversal roads crossing or touching a green space within `segment`
+    -   `value` - measured value for `segment`; unit of measurement depends on indicator: percentage of `length_green` out of `length_transversal`
+    -   `index` - standardized score of the measured `value` for `segment`; `1` is low, `2` is medium, `3` is high
+
 -   `A223-results.csv` - Sinuosity
+
+    -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.)
+    -   `length_river` - length of the river measured along the center line within `segment`
+    -   `length_valley` - length of the valley measured along ta straight line connecting the entry and exit points of the river within `segment`
+    -   `value` - measured value for `segment`; unit of measurement depends on indicator: `length_river` / `length_valley`
+
+-   `A231-results.csv` - Presence of ecotones
+
+    -   `segment` - unique id of the corridor segment for which the measurement is recorded, with the prefix `CS` and numbered incrementally from upstream to downstream with a two-digit format starting from `01` (i.e. `CS01`, `CS02`, etc.)
+
+    -   `length_riverbanks` - total length of riverbanks within `segment`
+
+    -   `length_ecotones` - total length of observed ecotones within `segment`
+
+    -   `value` - measured value for `segment`; unit of measurement depends on indicator: percentage of `length_ecotones` out of `length_riverbanks`
+
+    -   `index` - standardized score of the measured `value` for `segment`; `1` is low, `2` is medium, `3` is high
 
 -   `B111a-results.csv` - Diversity of land uses - patch richness diversity
 
--   `B114-results.csv` -
+    -   
 
 -   `B121a-results.csv` - Visual permeability - % of visible riverspace
 
