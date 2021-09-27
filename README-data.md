@@ -152,12 +152,9 @@ The following features are stored in `URC-D.gpkg`:
 
 #### 3.2.2 Assessment data
 
--   `URC-D-indicators.csv` - a table with the list of indicators
+-   `indicator-system.pdf` - indicators of connectivity and spatial capacity; excerpt from "Integrated Urban River Corridors" ([Forgaci, 2018, pp. 150-151, 153-154](https://doi.org/10.7480/abe.2018.31))
 
-    -   `id` - unique indicator name as defined in Section 3.1.2
-    -   `name` - the name of the indicator
-    -   `definition` - definition of what is measured and how the measurement is standardized on the three-point assessment scale
-    -   `source` - literature reference, if any
+-   `URC-D-indicators.pdf` - detailed description of the list of indicators selected for the assessment of URC Dâmbovița; Appendix E of "Integrated Urban River Corridors" ([Forgaci, 2018, pp. 307-343](https://doi.org/10.7480/abe.2018.31))
 
 -   `URC-D-assessment-all.csv` - a table with the summary of all scores
 
