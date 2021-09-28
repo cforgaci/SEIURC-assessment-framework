@@ -28,11 +28,15 @@ for (i in assessment_categories) {
     cnames <- colnames(results_indicator)
     results_indicator <- results_indicator %>% 
       rowwise() %>% 
-      mutate(m = min(c(A121a, A121c, A123a, A123b))) # minimum does not work yet !!!!
+      mutate(m = min(c_across())) %>% 
+      select(m)
     results_minimum <- cbind(results_minimum, results_indicator)
   } else {
     results_minimum <- cbind(results_minimum, results_indicator)
   }
 }
+colnames(results_minimum)[-1] <- assessment_categories
 
-## 
+## Print table with minimum values
+results_minimum
+
