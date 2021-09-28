@@ -2,7 +2,6 @@
 library(readr)
 library(dplyr)
 library(stringr)
-library(purrr)
 
 # Reduce table to minimum scores ----
 # on each sub-category of assessment, keeping both the 
@@ -38,5 +37,34 @@ for (i in assessment_categories) {
 colnames(results_minimum)[-1] <- assessment_categories
 
 ## Print table with minimum values
-results_minimum
+results_minimum <- tibble(results_minimum)
 
+# Assess results using the method of mirrored assessment
+## Where can social-ecological integration be improved
+for (i in 1:length(results_minimum$segment)) {
+  cat(paste0(results_minimum[i, 1], ":\n"))
+  for (j in 2:(length(results_minimum)-9)) {
+    if (results_minimum[i, j] < results_minimum[i, j+3]) {
+      cat(paste0("Social-Ecological Integration can be improved with ", colnames(results_minimum[, j]), "\n"))
+    } else if (results_minimum[i, j] > results_minimum[i, j+3]){
+      cat(paste0("Social-Ecological Integration can be improved with ", colnames(results_minimum[, j+3]), "\n"))
+    } else {
+      cat(paste0("Improvign Social-Ecological Integration needs intervention in both ", 
+                   colnames(results_minimum[, j]),
+                   " and ",
+                   colnames(results_minimum[, j+3]), "\n"))
+    }
+  }
+  for (j in (length(results_minimum)-5):(length(results_minimum)-3)) {
+    if (results_minimum[i, j] < results_minimum[i, j+3]) {
+      cat(paste0("Social-Ecological Integration can be improved with ", colnames(results_minimum[, j]), "\n"))
+    } else if (results_minimum[i, j] > results_minimum[i, j+3]){
+      cat(paste0("Social-Ecological Integration can be improved with ", colnames(results_minimum[, j+3]), "\n"))
+    } else {
+      cat(paste0("Improvign Social-Ecological Integration needs intervention in both ", 
+                 colnames(results_minimum[, j]),
+                 " and ",
+                 colnames(results_minimum[, j+3]), "\n"))
+    }
+  }
+}
