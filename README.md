@@ -10,7 +10,7 @@ The assessment framework consists of [an indicator system](#Indicator-system) an
 
 ## Indicator system
 
-Informed by an overview of current approaches to urban river assessment in urban planning and design, landscape architecture and landscape ecology, and structured by the four properties of URCs identified in Forgaci ([2018](https://doi.org/10.7480/abe.2018.31))—namely, Connectivity, Spatial capacity, Integration, and Multiscalarity—, the assessment framework comprises a system of social and ecological indicators of connectivity (with the sub-categories of lateral, longitudinal, and vertical connectivity) and spatial capacity (with the sub-categories of diversity, quality, and composition).
+Informed by an overview of current approaches to urban river assessment in urban planning and design, landscape architecture and landscape ecology, and structured by the four properties of URCs identified in Forgaci ([2018](https://doi.org/10.7480/abe.2018.31))—namely, Connectivity, Spatial capacity, Integration, and Multiscalarity—, the assessment framework comprises a system of social and ecological indicators of connectivity (with the sub-categories of lateral, longitudinal, and vertical connectivity) and spatial capacity (with the sub-categories of diversity, quality, and composition). The list of indicators is available ...
 
 ![Social-Ecological Integration Assessment Framework](fig/framework.png "Social-Ecological Integration Assessment Framework")
 
@@ -36,11 +36,14 @@ To account for local characteristics, this method of delineation requires a qual
 
 ## Application on URC Dâmbovița, Bucharest
 
-The assessment was carried out on a selection of indicators on URC Dâmbovița, Bucharest. An example of the results for one indicator is illustrated below. [`URC-D-analyses/`](URC-D-analyses/) contains `.mxd` files with the analyses carried out in ESRI ArcMap v10.2 and v10.3. [`URC-D-data/`](URC-D-data/) contains the geospatial data used for the analyses. For most indicators selected for assessment, the analytical workflows were saved with ArcMap's ModelBuilder. For indicators where the workflow was not recorded in an ArcMap model, a detailed description of the analytical steps was provided in a text file.
+The assessment was carried out on a selection of indicators on URC Dâmbovița, Bucharest. An example of the results for one indicator is illustrated below. [`URC-D-analyses/`](URC-D-analyses/) contains `.mxd` files with the analyses carried out in ArcMap v10.2 and v10.3. [`URC-D-data/`](URC-D-data/) contains the geospatial data used for the analyses. For most indicators selected for assessment, the analytical workflows were saved with ArcMap's ModelBuilder. For indicators where the workflow was not recorded in an ArcMap model, a detailed description of the analytical steps was provided in a text file.
 
 To reproduce the analyses for URC Dâmbovița, follow these steps:
 
-1. For each indicator in `URC-D-analyses/`, run the models in ArcMap or follow the steps described in [Appendix E](https://journals.open.tudelft.nl/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fjournals.open.tudelft.nl%2Fabe%2Farticle%2Fdownload%2F3275%2F3447%2F8841#9789463661096-TXT.indd%3A.322609%3A59470) of Integrated Urban River Corridors ([Forgaci, 2018](https://doi.org/10.7480/abe.2018.31)). 
+1. For each indicator in `URC-D-analyses/`, depending on the format in which the workflow is available, do one of the following:
+    - import the toolbox `URC-D.tbx` and run the models in ArcMap
+    - run the Python script
+    - follow the steps described in [Appendix E](https://journals.open.tudelft.nl/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fjournals.open.tudelft.nl%2Fabe%2Farticle%2Fdownload%2F3275%2F3447%2F8841#9789463661096-TXT.indd%3A.322609%3A59470) of Integrated Urban River Corridors ([Forgaci, 2018](https://doi.org/10.7480/abe.2018.31)) in another GIS software.
 
 2. Translate the values resulting from analysis into standardized scores according to the indicator definitions described in https://doi.org/10.4121/15126795 and add the scores to the score chart.
 
@@ -50,3 +53,10 @@ To reproduce the analyses for URC Dâmbovița, follow these steps:
 
 Detailed descriptions of the workflows and software used in the application of each indicator are also available in [Appendix E](https://journals.open.tudelft.nl/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fjournals.open.tudelft.nl%2Fabe%2Farticle%2Fdownload%2F3275%2F3447%2F8841#9789463661096-TXT.indd%3A.322609%3A59470) of Integrated Urban River Corridors ([Forgaci, 2018](https://doi.org/10.7480/abe.2018.31)). The data set with the assessment results for URC Dâmbovița can be found at <https://doi.org/10.4121/15126795>. The assessment framework and its application are described in detail in [Chapters 5 and 6](https://journals.open.tudelft.nl/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fjournals.open.tudelft.nl%2Fabe%2Farticle%2Fdownload%2F3275%2F3447%2F8841#9789463661096-TXT.indd%3A.322290%3A59394) of Integrated Urban River Corridors ([Forgaci, 2018](https://doi.org/10.7480/abe.2018.31)), respectively.
 
+## Future directions
+
+
+
+## How to contribute
+
+If you have potential use cases or ideas for cross-disciplinary application, please do share them by opening a GitHub issue. If you want to contribute to the development of the assessment framework, we are especially interested in porting the GIS workflow to an open source format.
