@@ -51,7 +51,7 @@ To reproduce the analyses for URC Dâmbovița, follow these steps:
 
 3. Run the script `assess.R` to determine the minimum desirable goal and to identify potentials of improved social-ecological integration in each corridor segment. In this repository, results of the assessment were stored in [`URC-D-assessment-minimum.csv`](URC-D-data/URC-D-assessment-minimum.csv)
 
-![Results for indicator A121c](fig/A121c.png "Results for indicator A121c") Accessibility from public transport stops (A121c Accessibility – visitors), as an example of a connectivity indicator applied on URC Dâmbovița and detailed on corridor segment CS03.
+>![Results for indicator A121c](fig/A121c.png "Results for indicator A121c") Accessibility from public transport stops (A121c Accessibility – visitors), as an example of a connectivity indicator applied on URC Dâmbovița and detailed on corridor segment CS03.
 
 Detailed descriptions of the workflows and software used in the application of each indicator are also available in [Appendix E](https://journals.open.tudelft.nl/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fjournals.open.tudelft.nl%2Fabe%2Farticle%2Fdownload%2F3275%2F3447%2F8841#9789463661096-TXT.indd%3A.322609%3A59470) of Integrated Urban River Corridors ([Forgaci, 2018](https://doi.org/10.7480/abe.2018.31)). The data set with the assessment results for URC Dâmbovița can be found at <https://doi.org/10.4121/15126795>. The assessment framework and its application are described in detail in [Chapters 5 and 6](https://journals.open.tudelft.nl/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fjournals.open.tudelft.nl%2Fabe%2Farticle%2Fdownload%2F3275%2F3447%2F8841#9789463661096-TXT.indd%3A.322290%3A59394) of Integrated Urban River Corridors ([Forgaci, 2018](https://doi.org/10.7480/abe.2018.31)), respectively.
 
@@ -61,4 +61,4 @@ The workflows included in this repository were developed and applied in the prop
 
 ## How to contribute
 
-If you have potential use cases or ideas for cross-disciplinary application, please do share them by opening a GitHub issue. If you want to contribute to the development of the assessment framework, we are especially interested in translating the GIS workflow to an open source format. Contributions to that end are more than welcome. Please open an issue to discuss your contribution before making a pull request.
+If you have potential use cases or ideas for cross-disciplinary application, please do share them by opening a GitHub issue. If you want to contribute to the development of the assessment framework, we are especially interested in translating the GIS workflow to an open source format. Contributions to that end are especially welcome. Please open an issue to discuss your contribution before making a pull request.
