@@ -8,7 +8,7 @@ library(stringr)
 # social and ecological indicators of each sub-category
 
 ## Read all scores
-results_all <- read_csv2("URC-D-assessment-all.csv")
+results_all <- read_csv("URC-D-data/URC-D-assessment-all.csv")
 
 ## Remove punctuation marks from column names
 colnames(results_all)[-1] <- str_replace_all(colnames(results_all)[-1], "[[:punct:]]", "")
