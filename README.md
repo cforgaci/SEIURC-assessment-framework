@@ -4,19 +4,21 @@
 
 ## Introduction
 
-This repository contains the GIS application files and workflows used in the social-ecological integration assessment of the river Dâmbovița, Bucharest, as part of the PhD research "Integrated Urban River Corridors: Spatial Design for Social-Ecological Resilience in Bucharest and Beyond" ([Forgaci, 2018](https://doi.org/10.7480/abe.2018.31)), conducted at TU Delft under the supervision of Prof. Arjan van Timmeren, Prof. Machiel van Dorst, and [Dr. Jorge Gil](https://github.com/jorgegil), and with the assistance of Dr. Daniele Cannatella.
+This repository contains GIS scripts and workflows used in the social-ecological integration assessment of the river Dâmbovița, Bucharest, as part of the research "Integrated Urban River Corridors: Spatial Design for Social-Ecological Resilience in Bucharest and Beyond" ([Forgaci, 2018](https://doi.org/10.7480/abe.2018.31)), conducted at TU Delft under the supervision of Prof. Arjan van Timmeren, Prof. Machiel van Dorst, and [Dr. Jorge Gil](https://github.com/jorgegil) and with contributions from Dr. Daniele Cannatella and Vincent Babes.
 
 The assessment framework consists of [an indicator system](#Indicator-system) and a [method of social-ecological integration assessment](#Method-of-social-ecological-integration-assessment) applied as a geospatial analysis of [Corridor Segments (CS) as analytical units of an Urban River Corridor (URC)](#Spatial-delineation) in question.
 
+The spatial analyses used in the application of the assessment framework on URC Dambovita were conducted in ArcGIS. Therefore, most workflows are either available as Python scripts exported from ArcMap's ModelBuilder or are provided in the form of detailed workflow descriptions. [We are currently translating these workflows](#Future-directions) into open source GIS software. [Contributions](#How-to-contribute) are especially encouraged to that end.
+
 ## Indicator system
 
-Informed by an overview of current approaches to urban river assessment in urban planning and design, landscape architecture and landscape ecology, and structured by the four properties of URCs identified in Forgaci ([2018](https://doi.org/10.7480/abe.2018.31))—namely, Connectivity, Spatial capacity, Integration, and Multiscalarity—, the assessment framework comprises a system of social and ecological indicators of connectivity (with the sub-categories of lateral, longitudinal, and vertical connectivity) and spatial capacity (with the sub-categories of diversity, quality, and composition). The list of indicators is available ...
+Informed by an overview of current approaches to urban river assessment in urban planning and design, landscape architecture and landscape ecology, and structured by the four properties of URCs identified in Forgaci ([2018](https://doi.org/10.7480/abe.2018.31))—namely, Connectivity, Spatial capacity, Integration, and Multiscalarity—, the assessment framework comprises a system of social and ecological indicators of connectivity (with the sub-categories of lateral, longitudinal, and vertical connectivity) and spatial capacity (with the sub-categories of diversity, quality, and composition). The full list of indicators of the indicator system is available at https://doi.org/10.4121/15126795.
 
 ![Social-Ecological Integration Assessment Framework](fig/framework.png "Social-Ecological Integration Assessment Framework")
 
 ## Method of social-ecological integration assessment
 
-The method makes use of a mirrored assessment chart which confronts the results from the analysis of social and ecological indicators of corresponding sub-categories. For instance, ecological spatial diversity measured in the level of biodiversity of local habitats is confronted with social spatial diversity measured through the multifunctionality of local public spaces. The assessment is carried out on corridor segment (CS) scale and summarised on the scale of the entire URC. As a planning or design decision tool, this method of assessment highlights key areas of intervention where a minimum desirable goal of social-ecological integration can be achieved. The following figure shows how scores recorded for a CS on the mirrored assessment chart can lead to decisions on where strategic interventions (marked with '+') can increase social-ecological integration.
+The method makes use of a mirrored assessment chart which confronts the results from the analysis of social and ecological indicators of corresponding sub-categories. For instance, ecological spatial diversity measured in the level of biodiversity of local habitats is confronted with social spatial diversity measured through the multifunctionality of local public spaces. The assessment is carried out on corridor segment (CS) scale and summarised on the scale of the entire URC. As a planning or design decision tool, this method of assessment highlights key areas of intervention where a minimum desirable goal of social-ecological integration can be achieved. The following figure shows how scores recorded for a CS on the mirrored assessment chart can lead to decisions on where strategic interventions (marked with '+') can increase social-ecological integration. The script `assess.R` in this repository generates a table of minimum values and highlights areas of improvement towards social-ecological integration for the case study URC Dambovita.
 
 ![](fig/assessment.png)
 
@@ -36,7 +38,7 @@ To account for local characteristics, this method of delineation requires a qual
 
 ## Application on URC Dâmbovița, Bucharest
 
-The assessment was carried out on a selection of indicators on URC Dâmbovița, Bucharest. An example of the results for one indicator is illustrated below. [`URC-D-analyses/`](URC-D-analyses/) contains `.mxd` files with the analyses carried out in ArcMap v10.2 and v10.3. [`URC-D-data/`](URC-D-data/) contains the geospatial data used for the analyses. For most indicators selected for assessment, the analytical workflows were saved with ArcMap's ModelBuilder. For indicators where the workflow was not recorded in an ArcMap model, a detailed description of the analytical steps was provided in a text file.
+The assessment was carried out on a selection of indicators on URC Dâmbovița, Bucharest. An example of the results for one indicator is illustrated below. [`URC-D-analyses/`](URC-D-analyses/) contains scripts and workflows describing analyses carried out in ArcMap v10.2 and v10.3. [`URC-D-data/`](URC-D-data/) contains the geospatial data used for the analyses as well as the assessment results. For some indicators selected for assessment, the analytical workflows were saved with ArcMap's ModelBuilder. For indicators where the workflow was not recorded in an ArcMap model, a detailed description of the analytical steps was provided in a text file.
 
 To reproduce the analyses for URC Dâmbovița, follow these steps:
 
@@ -45,9 +47,9 @@ To reproduce the analyses for URC Dâmbovița, follow these steps:
     - run the Python script
     - follow the steps described in [Appendix E](https://journals.open.tudelft.nl/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fjournals.open.tudelft.nl%2Fabe%2Farticle%2Fdownload%2F3275%2F3447%2F8841#9789463661096-TXT.indd%3A.322609%3A59470) of Integrated Urban River Corridors ([Forgaci, 2018](https://doi.org/10.7480/abe.2018.31)) in another GIS software.
 
-2. Translate the values resulting from analysis into standardized scores according to the indicator definitions described in https://doi.org/10.4121/15126795 and add the scores to the score chart.
+2. Translate the values resulting from analysis into standardized scores according to the indicator definitions described in https://doi.org/10.4121/15126795 and add the scores to the score chart. In this repository, scores were stored in [`URC-D-assessment-all.csv`](URC-D-data/URC-D-assessment-all.csv)
 
-3. Run the script `assess.R` to determine the minimum desirable goal and to identify potentials of improved social-ecological integration in each corridor segment.
+3. Run the script `assess.R` to determine the minimum desirable goal and to identify potentials of improved social-ecological integration in each corridor segment. In this repository, results of the assessment were stored in [`URC-D-assessment-minimum.csv`](URC-D-data/URC-D-assessment-minimum.csv)
 
 ![Results for indicator A121c](fig/A121c.png "Results for indicator A121c") Accessibility from public transport stops (A121c Accessibility – visitors), as an example of a connectivity indicator applied on URC Dâmbovița and detailed on corridor segment CS03.
 
@@ -55,8 +57,8 @@ Detailed descriptions of the workflows and software used in the application of e
 
 ## Future directions
 
-
+The workflows included in this repository were developed and applied in the proprietary software ArcGIS. Therefore, driven by increasing current and future applications of riverspace analysis in research and practice, we aim to develop and share those workflows in an open source format. We are currently developing the analyses in R, leveraging its GIS capabilities with the `sf` and `terra` packages. For a wider impact in the research community interested in in urban riverspace analysis, in the future we aim to open up the workflows to Python users as well.
 
 ## How to contribute
 
-If you have potential use cases or ideas for cross-disciplinary application, please do share them by opening a GitHub issue. If you want to contribute to the development of the assessment framework, we are especially interested in porting the GIS workflow to an open source format.
+If you have potential use cases or ideas for cross-disciplinary application, please do share them by opening a GitHub issue. If you want to contribute to the development of the assessment framework, we are especially interested in translating the GIS workflow to an open source format. Contributions to that end are more than welcome. Please open an issue to discuss your contribution before making a pull request.
