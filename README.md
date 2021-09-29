@@ -57,8 +57,16 @@ Detailed descriptions of the workflows and software used in the application of e
 
 ## Future directions
 
-The workflows included in this repository were developed and applied in the proprietary software ArcGIS. Therefore, driven by increasing current and future applications of riverspace analysis in research and practice, we aim to develop and share those workflows in an open source format. We are currently developing the analyses in R, leveraging its GIS capabilities with the `sf` and `terra` packages. For a wider impact in the research community interested in in urban riverspace analysis, in the future we aim to open up the workflows to Python users as well.
+The workflows included in this repository were developed and applied in the proprietary software ArcGIS. Therefore, driven by current and future applications of riverspace analysis in research, we aim to **develop and share those workflows in an open-source format**. We are currently translating the analyses into R, leveraging the GIS capabilities of the R packages `sf` and `terra`. For a wider impact in the research community interested in the social-ecologically integrated URC assessment, in the future we aim to open up the workflows to Python users as well.
+
+The indicator system and workflows are relevant beyond the focus of this assessment framework on social-ecological integration. They contribute to **the development of improved riverspace morphology analysis tools**. The development of general open source riverspace morphology analysis tools, which also leverage the increased availability of spatial-temporal big data, is the main direction in which we aim to channel our research software development efforts. The indicator system and analytical blocks developed in this framework provide a solid methodological base to that end.
 
 ## How to contribute
 
-If you have potential use cases or ideas for cross-disciplinary application, please do share them by opening a GitHub issue. If you want to contribute to the development of the assessment framework, we are especially interested in translating the GIS workflow to an open source format. Contributions to that end are especially welcome. Please open an issue to discuss your contribution before making a pull request.
+We welcome contributions from researchers from the field of urbanism or from any other relevant fields (e.g. water management, sociology, ecology) engaged in the analysis of riverside urban spaces. Contributions can be of at least two kinds:
+
+- If you have potential use cases or ideas for cross-disciplinary application, please do share them by opening a GitHub issue. 
+
+- If you want to contribute to the development of the assessment framework, we are especially interested in translating the GIS workflow to an open source format. Contributions to that end are especially welcome. Please open an issue to discuss your contribution before making a pull request.
+
+For updates on this project as well as other related research or development efforts, follow [@claudiuforgaci](https://twitter.com/claudiuforgaci) on Twitter.
