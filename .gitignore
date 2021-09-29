@@ -4,3 +4,6 @@
 .httr-oauth
 .DS_Store
 *-results.csv
+.gitignore
+*.gpkg-wal
+*.gpkg-shm
